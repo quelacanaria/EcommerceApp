@@ -16,7 +16,7 @@ function Form(){
                     <label className="mx-2 font-serif text-base text-stone-600" htmlFor="">Description: </label>
                     <textarea className="mx-2 px-2 resize-none font-serif text-base text-stone-600 shadow-mine border-gray-500 bg-gray-200 rounded-sm transform hover:scale-103 active:scale-100 transition-transform duration-.3" placeholder="Enter your product description"  name="" id=""></textarea>
 
-                   <button className="font-serif text-base border-2 border-transparent bg-gray-200 w-30 text-stone-600 shadow-mine h-10 mx-auto mt-2 transform hover:scale-110 active:scale-100 transition-transform duration-.3 cursor-pointer">Add Products</button> 
+                   <button className="font-serif text-base border-2 border-transparent bg-gray-200 w-30 text-stone-600 shadow-mine h-10 mx-auto mt-2 transform hover:scale-110 active:scale-90 transition-transform duration-.3 cursor-pointer">Add Products</button> 
                 </form> 
             </div>
         </>
