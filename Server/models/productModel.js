@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const ProductSchema = new mongoose.Schema({
-    image:{type: String,
-           required: [true, 'Product Image is required!!'],
-           trim: true,
-           maxLength: [1000, 'Product Image url cannot be more than 1000 characters']},
+//     image:{type: String,
+//            required: [true, 'Product Image is required!!'],
+//            trim: true,
+//            maxLength: [1000, 'Product Image url cannot be more than 1000 characters']},
     name:{type: String,
           required: [true, 'Product Name is required!!'],
           trim: true,
