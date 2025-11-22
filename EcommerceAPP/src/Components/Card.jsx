@@ -6,7 +6,8 @@ function Card(){
         axios.get('http://localhost:3000/api/products/get')
         .then(response => {
             setData(response.data)
-            console.log(response.data)
+            console.log(response.data.data.map(t => t.pname))
+             JSON.stringify(data, null)
         })
         .catch(error => console.log(error))
     }
@@ -15,8 +16,7 @@ function Card(){
     return(
         <>
             <div className="h-50 w-40 rounded-xl shadow-mine mx-1 my-1 bg-white grow max-w-50">
-                <button onClick={showDatas}>Click{}</button>
-                <p>{JSON.stringify(data, null)}</p>
+                <p>{}</p>
             </div>
         </>
     )
