@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import Card from "./Card"
-function Products(){
+function Products({count}){
     const [products, setProducts] = useState([]);
-    useEffect(() => {
         const showProducts = async() => {
             try{
                 const response = await axios.get('http://localhost:3000/api/products/get')
@@ -12,8 +11,10 @@ function Products(){
             }catch(error){
                 console.log('error -> ', error)
             }}
+    useEffect(() => {
             showProducts();
-    }, []);
+            console.log(count);
+    }, [count]);
 
     return(
         <>
